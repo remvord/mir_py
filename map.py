@@ -12,6 +12,8 @@ if __name__ == '__main__':
     #     print('Not Empty')
     # else:
     #     print('Empty')
+    m.update({'keys3': 300})
+    m.update({'keys4': 400})
     print(m.keys())
     for r in m.items():
         print(r[1])
