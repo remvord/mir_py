@@ -7,3 +7,4 @@ if __name__ == '__main__':
     print(s.format(n, j, sal))
     print(s1)
 
+ 
