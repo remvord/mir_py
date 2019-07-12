@@ -1,8 +1,8 @@
+import gc
 import sys
 import printer
 
-s = "wwwww\
-     wwwwww"
+s = "w"
 print(s)
 
 # Если это основной поток то ...
@@ -17,6 +17,15 @@ if __name__ == '__main__':
     print(printer.NO)
     print(dir(s))
     print(type(s))
+    print(sys.getsizeof(s))
+    # del s
+
     s = 1
     print(type(s))
     print(dir(s))
+    print(sys.getsizeof(s))
+
+    t = True
+    print(sys.getsizeof(t))
+    print(type(t))
+    #gc.collect()
