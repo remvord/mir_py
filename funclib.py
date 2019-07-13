@@ -27,5 +27,15 @@ def f3(k):
         print(r)
 
 
+def f4(*k):
+    for r in k:
+        print(r)
+
+
+def f5(**k):
+    for r in k:
+        print(f'{r}={k[r]}')
+
+
 if __name__ == '__main__':
     pass
