@@ -1,6 +1,5 @@
-import gc
 import sys
-import printer
+from day1 import printer
 
 s = "w"
 print(s)
