@@ -1,5 +1,5 @@
 import funclib
-from funclib import f3, f4, f5
+from funclib import f3, f4, f5, add
 
 # print(funclib.YES)
 # print(funclib.__NO)
@@ -11,4 +11,9 @@ from funclib import f3, f4, f5
 # f3({'qqqq': 1, 'wwww': 2})
 # f4(1, 2, 3)
 # f4(1, 'q', True)
-f5(a=1, b=5, c=10)
+# f5(a=1, b=5, c=10)
+# print(add(1))
+funclib.f6()
+funclib.f6()
+print(funclib.count)
+print(funclib.NO())

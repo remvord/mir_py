@@ -3,6 +3,8 @@ YES = 'Yes'
 __NO = 'No'
 _CANCEL = 'Finish'
 
+count = 0
+
 
 def f1(n):
     try:
@@ -35,6 +37,29 @@ def f4(*k):
 def f5(**k):
     for r in k:
         print(f'{r}={k[r]}')
+
+
+def add(a):
+    x = 1
+    print(f'x={x}')
+
+    def add1():
+        nonlocal x
+        x = 10
+        return a + x
+    print(f'x={x}')
+    return add1() + x
+    add1()
+
+
+def f6():
+    global count
+    count = count + 1
+
+
+def NO():
+    global __NO
+    return __NO
 
 
 if __name__ == '__main__':
