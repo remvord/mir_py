@@ -62,13 +62,13 @@ def NO():
     return __NO
 
 
-def ff(a, b):
-    return a+b
-
-
 def q(f):
     pass
     return f(10, 20)
+
+
+def ff(a, b):
+    return a+b
 
 
 def fff(a, b):
