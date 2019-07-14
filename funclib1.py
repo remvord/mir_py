@@ -1,7 +1,7 @@
 # print('hello')
-YES = 'Yes'
-__NO = 'No'
-_CANCEL = 'Finish'
+YES = 'YES'
+__NO = 'NO'
+_CANCEL = 'CANCEL'
 
 count = 0
 
@@ -60,19 +60,6 @@ def f6():
 def NO():
     global __NO
     return __NO
-
-
-def ff(a, b):
-    return a+b
-
-
-def q(f):
-    pass
-    return f(10, 20)
-
-
-def fff(a, b):
-    return a*b
 
 
 if __name__ == '__main__':
