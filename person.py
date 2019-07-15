@@ -33,7 +33,7 @@ class Person():
     def __str__(self):
         return f'{self.fn} {self.ln} возраст {self.age}'
 
-    def __str__(self):
+    def __repr__(self):
         return f'{self.fn} {self.ln} возраст {self.age}'
 
 
