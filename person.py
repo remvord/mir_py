@@ -34,15 +34,42 @@ class Person():
         return f'{self.fn} {self.ln} возраст {self.age}'
 
     def __repr__(self):
-        return f'{self.fn} {self.ln} возраст {self.age}'
+        return f'{self.fn} {self.ln} {self.age}'
+
+    def info(self):
+        return self.__str__()
+
+
+class Student(Person):
+    def __init__(self, fn, ln, age, univer):
+        Person.__init__(self, fn, ln, age)
+        self.__univer = univer
+
+    @property
+    def univer(self):
+        return self.__univer
+
+    def info(self):
+        return f'{super().info()} учится в {self.univer}'
+
+
+class Consumer(Person):
+    def __init__(self, fn, ln, age, company):
+        Person.__init__(self, fn, ln, age)
+        self.__company = company
+
+    @property
+    def company(self):
+        return self.__company
+
+    def info(self):
+        return f'{super().info()} работает в  {self.company}'
 
 
 if __name__ == '__main__':
-    p1 = Person('Ivan', 'Ivanov')
-    p2 = Person('Ivan', 'Ivanov')
-    print(p1 == p2)
-    # p.age = 25
-    # print(p.fn, p.ln, p.age)
-    # print(p)
-    print(dir(p1))
-
+    s = Student('Ivan', 'Ivanov', 25, "UPI")
+    c = Consumer('Petr', 'Petrov', 40, 'TIZOL')
+    p = Person('Sidr', 'Sidorov', 35)
+    a = [s, c, p]
+    for r in a:
+        print(r.info())
