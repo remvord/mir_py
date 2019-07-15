@@ -33,9 +33,16 @@ class Person():
     def __str__(self):
         return f'{self.fn} {self.ln} возраст {self.age}'
 
+    def __str__(self):
+        return f'{self.fn} {self.ln} возраст {self.age}'
+
 
 if __name__ == '__main__':
-    p = Person('Ivan', 'Ivanov')
-    p.age = 25
-    print(p.fn, p.ln, p.age)
-    print(p)
+    p1 = Person('Ivan', 'Ivanov')
+    p2 = Person('Ivan', 'Ivanov')
+    print(p1 == p2)
+    # p.age = 25
+    # print(p.fn, p.ln, p.age)
+    # print(p)
+    print(dir(p1))
+
